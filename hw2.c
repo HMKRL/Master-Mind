@@ -15,7 +15,7 @@
 
 void start(int N,int P) //開場動畫子程式
 {
-	system("clear");
+	printf("\033c");
 	int i,j,k;
 	for (i = 1;i <= 17;i++)
 	{
@@ -53,7 +53,7 @@ void start(int N,int P) //開場動畫子程式
 	whitep[0] = "██████████████████████████████████████████████████████████████";
 	for(k = 0;k <= 16;k++)
 	{
-		system("clear");
+		printf("\033c");
 		for(i = 0;i <= k;i++)
 		{
 			printf("%s\n",mastermindp[i]);
@@ -77,7 +77,7 @@ void start(int N,int P) //開場動畫子程式
 	char enter = 0;
 	while(enter != '\r' && enter != '\n')
 		enter = getchar();
-	system("clear");
+	printf("\033c");
 	printf("%s\n%s\n%s\n%s%d%s%s\n%s%-5d%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s",
 	"╔═════════════════════════════════════════╤══════════════════╗",
 	"║ Master Mind                             │Your guess history║",
@@ -146,7 +146,7 @@ void print(char *guess[],char *HX[],int type,int c,bool right,int N,int P,char *
 		printp[2] = ans[0];
 	}
 	//以下為表格框架
-	system ("clear");
+	printf("\033c");
 	printf("%s\n%s\n%s\n%s%d%s%10s%s%4s%s\n%s%-5d%s%10s%s%4s%s\n%s%10s%s%4s%s\n%s%-40s%s%10s%s%4s%s\n%s%-40s%s%10s%s%4s%s\n%s%-40s%s%10s%s%4s%s\n%s%10s%s%4s%s\n%s%10s%s%4s%s\n%s%10s%s%4s%s\n%s%10s%s%4s%s\n%s%10s%s%4s%s\n%s%10s%s%4s%s\n%s%-5d%s%10s%s%4s%s\n%s\n%s",
 	"╔═════════════════════════════════════════╤══════════════════╗",
 	"║ Master Mind                             │Your guess history║",
